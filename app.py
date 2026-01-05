@@ -91,6 +91,6 @@ if st.button("Calcular Risco de Saída"):
     st.info(mensagem)
     
     # O GANCHO DE VENDA (Call to Action)
-    st.markdown("### Quer analisar toda a sua equipa?")
+    st.markdown("### Quer analisar toda a sua equipe?")
     st.write("Esta análise foi feita para apenas uma pessoa. Imagine ter este dado cruzado com a sua folha de pagamentos para prever o risco de turnover de toda a empresa.")
-    st.link_button("Falar com o Especialista", "https://wa.me/SEUNUMEROAQUI")
+    st.link_button("Falar com o Especialista", "https://wa.me/5512991281387")
