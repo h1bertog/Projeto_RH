@@ -1,4 +1,5 @@
 import streamlit as st
+import urllib.parse
 
 # Configuração da Página
 st.set_page_config(page_title="Calculadora de Risco de Retenção", page_icon="⚠️")
@@ -93,4 +94,9 @@ if st.button("Calcular Risco de Saída"):
     # O GANCHO DE VENDA (Call to Action)
     st.markdown("### Quer analisar toda a sua equipe?")
     st.write("Esta análise foi feita para apenas uma pessoa. Imagine ter este dado cruzado com a sua folha de pagamentos para prever o risco de turnover de toda a empresa.")
-    st.link_button("Falar com o Especialista", "https://wa.me/5512991281387")
+    # Criando a mensagem automática
+    texto = "Oi! Acabei de usar a Calculadora de Risco de Talento e gostaria de mais informações."
+    texto_codificado = urllib.parse.quote(texto)
+    link_whatsapp = f"https://wa.me/5512991281387?text={texto_codificado}"
+
+    st.link_button("Falar com o Especialista", link_whatsapp)
